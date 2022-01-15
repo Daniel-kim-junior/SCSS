@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+body {
+  font-family: "Dongle", sans-serif;
+}
+
+.btn {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.frame {
+  display: flex;
+  gap: 20px;
+}
+
+.frame div {
+  flex: 1;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+}
+
+.frame div:nth-child(1) {
+  background-color: rebeccapurple;
+}
+
+.frame div:hover {
+  color: white;
+  transform: translateY(-10px);
+}
+
+.frame div:nth-child(2) {
+  background-color: red;
+}
+
+.frame div:nth-child(3) {
+  background-color: blue;
+}

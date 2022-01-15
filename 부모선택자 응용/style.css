@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+body {
+  font-family: "Dongle", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+}
+
+.font-large {
+  font-size: 60px;
+  color: red;
+  text-transform: uppercase;
+}
+
+.font-medium {
+  font-size: 40px;
+  color: yellow;
+}
+
+.font-small {
+  font-size: 20px;
+  color: rebeccapurple;
+}
