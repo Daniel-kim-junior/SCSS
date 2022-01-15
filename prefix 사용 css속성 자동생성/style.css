@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+body {
+  font-family: "Dongle", sans-serif;
+  font-size: 18px;
+  font-weigth: 500;
+}
+
+.portfolio p {
+  text-align: center;
+  text-overflow: hidden;
+  text-transform: uppercase;
+}

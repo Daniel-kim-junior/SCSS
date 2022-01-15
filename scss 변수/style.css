@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+body {
+  font-family: "Dongle", sans-serif;
+  font-size: 18px;
+  font-weigth: 500;
+}
+
+.btns .btn {
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: white;
+}
+
+.btns .primary {
+  background-color: skyblue;
+}
+
+.btns .secondary {
+  background-color: royalblue;
+}
+
+.btns .warning {
+  background-color: crimson;
+}

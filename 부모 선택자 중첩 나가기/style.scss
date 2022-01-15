@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Dongle", sans-serif;
+}
+
+.frame {
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+  @at-root .heading {
+    font-size: 36px;
+    color: crimson;
+    font-weight: normal;
+  }
+}
