@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Dongle", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2em;
+  background-color: rgb(243, 243, 243);
+  list-style: 1.6em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signin {
+  .sign-inner {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    width: 50vw;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+  }
+
+  input[type="button"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  input[type="button"] {
+    margin-bottom: 20px;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: crimson;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: green;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  input[type="email"]:focus {
+    background-color: yellow;
+  }
+}
