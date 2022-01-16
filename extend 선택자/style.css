@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+body {
+  font-family: "Dongle", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
+
+.btn, .order, .add, .checkout {
+  width: 200px;
+  padding: 7px;
+  background-color: white;
+  font-size: 19px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.order {
+  background-color: violet;
+  color: white;
+}
+
+.add {
+  background-color: yellowgreen;
+}
+
+.checkout {
+  color: black;
+  border: 1px solid black;
+}

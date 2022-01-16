@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+* {
+  font: {
+    family: "Dongle", sans-serif;
+    size: 18px;
+    weigth: 500;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+//@mixin and @include
+
+@mixin boader-style($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin button-padding($updown, $leftright) {
+  padding: $updown $leftright;
+}
+
+.buttons {
+  button {
+    // width: 200px;
+    padding: 7px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    @include button-padding(20px, 100px);
+    &.approval {
+      @include boader-style(2px, solid, red);
+    }
+
+    &.refuse {
+      @include boader-style(6px, solid, violet);
+    }
+  }
+}

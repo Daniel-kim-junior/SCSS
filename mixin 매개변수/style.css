@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+* {
+  font-family: "Dongle", sans-serif;
+  font-size: 18px;
+  font-weigth: 500;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buttons button {
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px 100px;
+}
+
+.buttons button.approval {
+  border: 2px solid red;
+}
+
+.buttons button.refuse {
+  border: 6px solid violet;
+}

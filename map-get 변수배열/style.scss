@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+* {
+  font: {
+    family: "Dongle", sans-serif;
+  }
+}
+
+// Build-in Function : map-get
+$color: (
+  font-primary: #9b59b6,
+  font-secondary: #3498db,
+  font-focus: #f1c40f,
+  bgc-primary: #95a5a6,
+  bgc-secondary: #e74c3c,
+);
+
+$headline-font: (
+  headline-font-large: 45px,
+  headline-font-medium: 32px,
+  headline-font-small: 22px,
+);
+
+body {
+  background-color: map-get($color, bgc-primary);
+}
+
+.frame {
+  h1 {
+    color: map-get($color, font-primary);
+    font-size: map-get($headline-font, headline-font-large);
+  }
+  h2 {
+    font-size: map-get($headline-font, headline-font-medium);
+  }
+  h3 {
+    font-size: map-get($headline-font, headline-font-small);
+  }
+}
