@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+* {
+  font: {
+    family: "Dongle", sans-serif;
+    size: 18px;
+    weigth: 500;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// variables
+$complete-btn: skyblue;
+$loading-btn: yellowgreen;
+$error-btn: red;
+
+//  Button Mixin
+@mixin notice-button {
+  font-size: 15px;
+  width: 150px;
+  padding: 7px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  &.complete:hover {
+    background-color: $complete-btn;
+    color: white;
+    transition: 0.35s;
+  }
+  &.loading:hover {
+    background-color: $loading-btn;
+    color: white;
+    transition: 0.35s;
+  }
+  &.error:hover {
+    background-color: $error-btn;
+    color: white;
+    transition: 0.35s;
+  }
+}
+
+.complete {
+  @include notice-button();
+  border: 3px solid $complete-btn;
+  color: $complete-btn;
+}
+.loading {
+  @include notice-button();
+  border: 3px solid $loading-btn;
+  color: $loading-btn;
+}
+.error {
+  @include notice-button();
+  border: 3px solid $error-btn;
+  color: $error-btn;
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+* {
+  font-family: "Dongle", sans-serif;
+  font-size: 18px;
+  font-weigth: 500;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.complete {
+  font-size: 15px;
+  width: 150px;
+  padding: 7px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid skyblue;
+  color: skyblue;
+}
+
+.complete.complete:hover {
+  background-color: skyblue;
+  color: white;
+  transition: 0.35s;
+}
+
+.complete.loading:hover {
+  background-color: yellowgreen;
+  color: white;
+  transition: 0.35s;
+}
+
+.complete.error:hover {
+  background-color: red;
+  color: white;
+  transition: 0.35s;
+}
+
+.loading {
+  font-size: 15px;
+  width: 150px;
+  padding: 7px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid yellowgreen;
+  color: yellowgreen;
+}
+
+.loading.complete:hover {
+  background-color: skyblue;
+  color: white;
+  transition: 0.35s;
+}
+
+.loading.loading:hover {
+  background-color: yellowgreen;
+  color: white;
+  transition: 0.35s;
+}
+
+.loading.error:hover {
+  background-color: red;
+  color: white;
+  transition: 0.35s;
+}
+
+.error {
+  font-size: 15px;
+  width: 150px;
+  padding: 7px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid red;
+  color: red;
+}
+
+.error.complete:hover {
+  background-color: skyblue;
+  color: white;
+  transition: 0.35s;
+}
+
+.error.loading:hover {
+  background-color: yellowgreen;
+  color: white;
+  transition: 0.35s;
+}
+
+.error.error:hover {
+  background-color: red;
+  color: white;
+  transition: 0.35s;
+}

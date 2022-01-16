@@ -3,7 +3,6 @@ body {
   font-family: "Dongle", sans-serif;
 }
 
-/* @mixin and @include */
 .heading {
   text-align: center;
   font-size: 36px;
