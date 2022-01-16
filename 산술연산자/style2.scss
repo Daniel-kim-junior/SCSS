@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+body {
+  font: {
+    family: "Dongle", sans-serif;
+    size: 18px;
+    weigth: 500;
+  }
+  margin: 0;
+}
+
+// Operations
+$fs: 15px;
+$box-margin: 50px;
+
+.frame {
+  border: 1px solid blueviolet;
+  padding: 10px + 10px;
+  margin: $box-margin / 2;
+  h1 {
+    font-size: $fs * 3;
+  }
+  p {
+    border: 1px solid black;
+    margin: ($box-margin / 2);
+    font-size: $fs * 1.5;
+  }
+}

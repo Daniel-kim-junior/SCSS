@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+body {
+  font-family: "Dongle", sans-serif;
+}
+
+/* @mixin and @include */
+.heading {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.heading span {
+  color: blueviolet;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 10vw;
+  height: 0.5vh;
+  background-color: black;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.news-headline {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.news-headline span {
+  color: blueviolet;
+}
+
+.news-headline::after {
+  content: "";
+  position: absolute;
+  width: 10vw;
+  height: 0.5vh;
+  background-color: black;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}

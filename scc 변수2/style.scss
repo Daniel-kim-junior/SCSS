@@ -6,7 +6,7 @@ body {
   }
 }
 //  Variables
-$color-primary: #222;
+$color-primary: red;
 $color-secondary: #333;
 $bgc-item: #eee;
 $portfolio-item-w: 300px;
@@ -32,7 +32,6 @@ $portfolio-images-url: "images/";
       width: $portfolio-item-w;
       height: $portfolio-item-h;
       border-radius: $porfolio-item-bdrs;
-      
     }
   }
 }
